@@ -6,7 +6,34 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+
+      <h5> Email: <%= @order.email %></h5>
+      <h5> Order Total: <%= @order.total %></h5>
+
   </div>
+
+
+ <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Description</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+      <%= render partial: 'line_item', collection: @order.line_items %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="5">
+            TOTAL: <%= @order.total %>
+
+        </tr>
+      </tfoot>
+    </table>
+
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
