@@ -21,6 +21,22 @@ end
 
 # Let's do this ...
 
+## USERS
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+User.create :first_name => "Sadie", :last_name => "Freeman", :email => "sadiefreeman@gmail.com", :password_digest => "rawr"
+
+
+
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."
@@ -131,6 +147,19 @@ cat3.products.create!({
   quantity: 23,
   price: 2_483.75
 })
+
+# REVIEWS
+
+Review.create :product_id => 4, :user_id => 1, :description => "Terrible hipster bollocks", :rating => 1
+Review.create :product_id => 5, :user_id => 1, :description => "Rubbish", :rating => 2
+Review.create :product_id => 5, :user_id => 1, :description => "Meh", :rating => 3
+Review.create :product_id => 5, :user_id => 1, :description => "Love this shit", :rating => 4
+Review.create :product_id => 6, :user_id => 1, :description => "Best thing ever", :rating => 5
+Review.create :product_id => 6, :user_id => 1, :description => "Life-changing", :rating => 5
+Review.create :product_id => 6, :user_id => 1, :description => "Buy this now", :rating => 5
+
+
+
 
 
 puts "DONE!"
