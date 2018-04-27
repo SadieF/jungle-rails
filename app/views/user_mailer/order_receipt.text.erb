@@ -1,0 +1,8 @@
+Welcome to the Jungle
+===============================================
+You bought some stuff:
+<%= render partial: 'orders/line_item', collection: @order.line_items %>
+
+for a total of: <%= @order.total %>
+
+Thanks for buying and have a great day!
