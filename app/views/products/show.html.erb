@@ -27,18 +27,20 @@
     </div>
 
     <div>
-        <dt>Reviews</dt>
-
+      <dt>Reviews</dt><br>
         <% @product.reviews.each do |review| %>
 
-        <dd>User: <%= review.user_id %></dd>
-        <dd>Description: <%= review.description %></dd>
-        <dd>Rating: <%= review.rating %></dd>
-
-
+          <div class="col-sm-8">
+            <dl class="dl-horizontal">
+              <dt>User: </dt>
+              <dd><%= review.user_id %></dd>
+              <dt>Description: </dt>
+              <dd> <%= review.description %></dd>
+              <dt>Rating: </dt>
+              <dd><%= review.rating %></dd><br>
+             </dl>
+          </div>
         <% end %>
-      </div>
-
+    </div>
   </article>
-
 </section>
