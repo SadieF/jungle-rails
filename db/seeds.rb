@@ -157,6 +157,8 @@ Review.create :product_id => 5, :user_id => 1, :description => "Love this shit",
 Review.create :product_id => 6, :user_id => 1, :description => "Best thing ever", :rating => 5
 Review.create :product_id => 6, :user_id => 1, :description => "Life-changing", :rating => 5
 Review.create :product_id => 6, :user_id => 1, :description => "Buy this now", :rating => 5
+Review.create :product_id => 11, :user_id => 1, :description => "Life-changing", :rating => 5
+Review.create :product_id => 12, :user_id => 1, :description => "Buy this now", :rating => 5
 
 
 
