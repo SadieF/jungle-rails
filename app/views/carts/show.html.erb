@@ -3,8 +3,9 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+<% if cart.size > 0 %>
   <div class="panel panel-default items">
+
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -15,10 +16,12 @@
         </tr>
       </thead>
       <tbody>
+
         <% @cart_total = 0 %>
         <% cart.each do |product_id, details| %>
           <%= render 'item', product_id: product_id, details: details %>
         <% end %>
+
       </tbody>
       <tfoot>
         <tr>
@@ -26,11 +29,15 @@
             TOTAL:
           </th>
           <th>
+
             <%= @cart_total %>
           </th>
         </tr>
       </tfoot>
+
     </table>
+
+
   </div>
 
   <div class="row">
@@ -49,5 +56,10 @@
       <% end %>
     </div>
   </div>
+  <% else %>
+  <h2>Oh no! Your cart is empty. Like my soul. Go fill it up.</h2>
+  <h2><%= link_to 'Home', :root %></h2>
+  <% end %>
+
 
 </section>
