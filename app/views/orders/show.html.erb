@@ -6,10 +6,10 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
-
-      <h5> Email: <%= @order.email %></h5>
+      <% if current_user %>
+      <h5> Email: <%= current_user.email %></h5>
       <h5> Order Total: <%= @order.total %></h5>
-
+      <% end %>
   </div>
 
 
