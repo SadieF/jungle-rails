@@ -15,6 +15,11 @@
     <%= link_to product, class: 'btn btn-default pull-right' do %>
       Details &raquo;
     <% end %>
+        <% if product.reviews.average(:rating) %>
+      <h5>Average Rating: <%= (product.reviews.average(:rating)).round(1) %>/5</h5>
+    <% else %>
+      <h5>Be the first to rate this!</h5>
+    <% end %>
   </footer>
 
   <aside class="price">
