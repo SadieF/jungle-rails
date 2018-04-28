@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. This Lighthouse Labs project involved inheriting code, fixing bugs, and implementing smaller features to build up a skills base with Ruby on Rails.
 
 
 ## Setup
