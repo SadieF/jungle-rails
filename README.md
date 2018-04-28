@@ -29,3 +29,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
+![Product Page](https://github.com/SadieF/jungle-rails/blob/master/docs/Product_page.png?raw=true)
+
+![Product Order](https://github.com/SadieF/jungle-rails/blob/master/docs/Product_order_page.png?raw=true)
+
+![Checkout Page](https://github.com/SadieF/jungle-rails/blob/master/docs/order_confirmation_page.png?raw=true)
+
