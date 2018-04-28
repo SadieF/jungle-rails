@@ -26,26 +26,26 @@
       </div>
     </div>
 
-<dt>Reviews</dt><br>
+        <% if current_user %>
           <%= form_for :review, url: product_reviews_path(@product.id) do |f| %>
             <strong>Review this product:</strong>
             <ul>
-              <%= f.fields_for :reviews do |reviews_form| %>
-                  <%= reviews_form.label :description %>
-                  <%= reviews_form.text_area :description %>
+                  <%= f.label :description %>
+                  <%= f.text_area :description %>
 
-                  <%= reviews_form.label :rating %>
-                  <%= reviews_form.select :rating, ['1', '2', '3', '4', '5'] %>
-                  <%=reviews_form.submit("Submit") %>
-
-              <% end %>
+                  <%= f.label :rating %>
+                  <%= f.select :rating, ['1', '2', '3', '4', '5'] %>
+                  <%= f.submit("Submit") %>
             </ul>
           <% end %>
+<% end %>
 
 
 
   <div>
-        <% @product.reviews.each do |review| %>
+          <dt>Reviews</dt><br>
+
+        <% @product.reviews.reverse_each do |review| %>
 
           <div class="col-sm-8">
             <dl class="dl-horizontal">
