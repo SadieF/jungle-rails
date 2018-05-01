@@ -7,7 +7,7 @@ RSpec.describe Product, type: :model do
                                           description: "product description",
                                           quantity: 4,
                                           category: @category,
-                                          price: 987.65
+                                          price: 100
                                           )
   end
 
