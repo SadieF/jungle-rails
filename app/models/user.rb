@@ -13,14 +13,5 @@ class User < ActiveRecord::Base
   validates :password_digest, presence: true, length: {minimum: 3}
   validates :password, presence: true
 
-  def authenticate_with_credentials(email, password)
-    if (email && password)
-      email = self.email.strip.downcase unless self.email.nil?
-     User.create(first_name: "first", last_name: "last", email: email, password: password)
-    else
-      nil
-    end
-  end
-
 
 end
